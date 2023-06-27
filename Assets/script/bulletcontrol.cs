@@ -5,7 +5,14 @@ using UnityEngine;
 public class bulletcontrol : MonoBehaviour
 {
     public float speed = 50f;
-   
+
+    private ScoreScript scoreScript;
+    public int scoreValue = 10;
+    private void Start()
+    {
+        scoreScript = FindObjectOfType<ScoreScript>(); // Find the ScoreScript component
+    }
+
 
     private void Update()
     {
@@ -16,7 +23,7 @@ public class bulletcontrol : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            print("hello");
+            scoreScript.IncreaseScore(scoreValue);
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
