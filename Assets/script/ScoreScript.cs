@@ -6,16 +6,16 @@ public class ScoreScript : MonoBehaviour
 
     private void Start()
     {
-        score = 0; // Initialize the score to zero
+        score = 0; 
     }
 
     public void IncreaseScore(int incrementAmount)
     {
-        score += incrementAmount; // Increase the score by the specified amount
+        score += incrementAmount;
     }
 
     public int GetScore()
     {
-        return score; // Return the current score
+        return score; 
     }
 }

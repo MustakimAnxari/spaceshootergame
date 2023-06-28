@@ -10,7 +10,7 @@ public class bulletcontrol : MonoBehaviour
     public int scoreValue = 10;
     private void Start()
     {
-        scoreScript = FindObjectOfType<ScoreScript>(); // Find the ScoreScript component
+        scoreScript = FindObjectOfType<ScoreScript>();
     }
 
 
