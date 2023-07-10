@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class bulletcontrol : MonoBehaviour
 {
+    [SerializeField] private AudioSource hitsound;
     public float speed = 50f;
 
     private ScoreScript scoreScript;
-    public int scoreValue = 10;
+    public int scoreValue = 0;
     private void Start()
     {
         scoreScript = FindObjectOfType<ScoreScript>();
@@ -23,9 +24,11 @@ public class bulletcontrol : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
+            
             scoreScript.IncreaseScore(scoreValue);
             Destroy(other.gameObject);
             Destroy(gameObject);
+            hitsound.Play();
         }
     }
 }

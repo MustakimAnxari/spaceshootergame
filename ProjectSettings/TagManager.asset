@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Bullet
+  - button
   layers:
   - Default
   - TransparentFX
@@ -46,6 +47,9 @@ TagManager:
   - name: Background
     uniqueID: 1947543829
     locked: 0
+  - name: button
+    uniqueID: 2134872805
+    locked: 0
   - name: Planets
     uniqueID: 4094135763
     locked: 0
@@ -55,12 +59,6 @@ TagManager:
   - name: Enemy
     uniqueID: 1152134415
     locked: 0
-  - name: Bonus
-    uniqueID: 689362467
-    locked: 0
   - name: Player
     uniqueID: 2402381985
-    locked: 0
-  - name: VFX
-    uniqueID: 738997965
     locked: 0
