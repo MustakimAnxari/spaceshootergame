@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class bulletcontrol : MonoBehaviour
 {
-   // [SerializeField] private AudioSource hitsound;
+  
     [SerializeField] private AudioSource destroysound;
-    //[SerializeField] private AudioClip destroysound;
+    public GameObject destroysoundobject;
+    private AudioSource destroybgm;
+
     public float speed = 50f;
 
     private ScoreScript scoreScript;
@@ -16,6 +18,9 @@ public class bulletcontrol : MonoBehaviour
     private void Start()
     {
         scoreScript = FindObjectOfType<ScoreScript>();
+        destroysoundobject = GameObject.Find("music");
+        destroybgm = destroysoundobject.GetComponent<AudioSource>();
+        
     }
 
 
@@ -30,7 +35,7 @@ public class bulletcontrol : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             // AudioSource.PlayClipAtPoint(destroysound, transform.position);
-            destroysound.Play();
+           destroybgm.Play();
            ParticleSystem  neweffect= Instantiate(particleEffect, transform.position, Quaternion.identity);
             
             scoreScript.IncreaseScore(scoreValue);

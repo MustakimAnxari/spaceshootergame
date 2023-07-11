@@ -4,7 +4,7 @@ public class gyromovement : MonoBehaviour
 {
     private bool gyroEnabled;
     private Gyroscope gyro;
-    public float moveSpeed = 10f;
+    public float moveSpeed = 5f;
 
     private void Start()
     {
