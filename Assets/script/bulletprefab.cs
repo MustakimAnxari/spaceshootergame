@@ -5,6 +5,7 @@ using UnityEngine;
 public class bulletprefab : MonoBehaviour
 
 {
+    [SerializeField] private AudioSource hitsound;
     public GameObject bulletPrefab;
 
     void Update()
@@ -12,6 +13,7 @@ public class bulletprefab : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) 
         {
             Instantiate(bulletPrefab, transform.position, transform.rotation);
+            hitsound.Play();
         }
     }
 }
