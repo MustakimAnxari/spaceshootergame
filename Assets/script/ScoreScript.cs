@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class ScoreScript : MonoBehaviour
 {
-    private int score;
+    public static int score;
 
-    private void Start()
+    public void Start()
     {
         score = 0; 
     }
 
     public void IncreaseScore(int incrementAmount)
     {
-        score += incrementAmount;
+        score += incrementAmount; 
     }
 
     public int GetScore()
