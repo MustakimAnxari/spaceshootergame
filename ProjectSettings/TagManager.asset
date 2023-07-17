@@ -5,8 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - Bullet
+  - PlayerBullet
+  - EnemyBullet
   - button
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -44,21 +46,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 1947543829
+  - name: other
+    uniqueID: 3873424483
     locked: 0
-  - name: button
-    uniqueID: 2134872805
+  - name: enemy
+    uniqueID: 2828239587
     locked: 0
-  - name: Planets
-    uniqueID: 4094135763
+  - name: bullet
+    uniqueID: 3618986881
     locked: 0
-  - name: Projectile
-    uniqueID: 1111697911
-    locked: 0
-  - name: Enemy
-    uniqueID: 1152134415
-    locked: 0
-  - name: Player
-    uniqueID: 2402381985
+  - name: player
+    uniqueID: 3996538309
     locked: 0

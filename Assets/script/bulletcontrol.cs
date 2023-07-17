@@ -5,7 +5,7 @@ using UnityEngine;
 public class bulletcontrol : MonoBehaviour
 {
   
-    [SerializeField] private AudioSource destroysound;
+    //[SerializeField] private AudioSource destroysound;
     public GameObject destroysoundobject;
     private AudioSource destroybgm;
 
